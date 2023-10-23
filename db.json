@@ -1,0 +1,36 @@
+{
+    "users": [
+        {
+            "name": "Anna",
+            "flat": 378
+        },
+        {
+            "name": "Artem",
+            "flat": 378
+        },
+        {
+            "name": "Oleh",
+            "flat": 378
+        },
+        {
+            "name": "Lilya",
+            "flat": 379
+        },
+        {
+            "name": "Oleksii",
+            "flat": 377
+        },
+        {
+            "name": "Yurii",
+            "flat": 380
+        },
+        {
+            "name": "Olena",
+            "flat": 380
+        },
+        {
+            "name": "Dmitro",
+            "flat": 381
+        }
+    ]
+}

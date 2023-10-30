@@ -19,7 +19,7 @@ jobs:
         echo "Hello Message 2"
 
     - name: List current folder
-      run: dir
+      run: ls
     
 
   myDeploy:

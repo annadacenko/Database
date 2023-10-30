@@ -16,7 +16,10 @@ jobs:
 
   myDeploy:
      runs-on: windows-latest
+     needs: [myTest]
+     
      steps:
+     
      - name: print Hello Message
        run: echo "Hello, world! from myDeploy job"
 

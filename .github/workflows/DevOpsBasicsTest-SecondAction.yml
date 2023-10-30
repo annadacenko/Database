@@ -17,6 +17,9 @@ jobs:
       run: |
         echo "Hello Message 1"
         echo "Hello Message 2"
+
+    - name: List current folder
+      run: dir
     
 
   myDeploy:

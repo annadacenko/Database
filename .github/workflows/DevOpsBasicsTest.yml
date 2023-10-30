@@ -1,0 +1,17 @@
+name: DevOpsBasicsTest-FirstAction
+
+on:
+  push:
+    branches: [ "main" ]
+ 
+
+jobs:
+  myTest:
+    runs-on: windows-latest
+    
+    steps:
+   
+    - name: print Hello Message
+      run: echo "Hello, world! from myTest job"
+       
+       

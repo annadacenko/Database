@@ -33,7 +33,7 @@ jobs:
 
   myDeploy:
      runs-on: windows-latest
-     needs: [myTest]
+    # needs: [myTest]
      
      steps:
      
@@ -43,6 +43,11 @@ jobs:
      - name: printing Deployment Package
        run: echo "Deploy Package Name is $({env.DEPLOY_PACKAGE_NAME})"
 
+     - name: Let`s test some Packages if they are here 1
+       run: aws --version
+
+     - name: Let`s test some Packages if they are here 2
+       run: zip
 
 
 

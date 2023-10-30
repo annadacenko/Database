@@ -12,6 +12,11 @@ jobs:
    
     - name: print Hello Message
       run: echo "Hello, world! from myTest job"
+
+    - name: Execute few commands
+      run: |
+        echo "Hello Message 1"
+        echo "Hello Message 2"
     
 
   myDeploy:

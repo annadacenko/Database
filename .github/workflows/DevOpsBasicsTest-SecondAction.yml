@@ -1,4 +1,7 @@
 name: DevOpsBasicsTest-SecondAction
+env:
+  APPLICATION_NAME : "MyApp"
+  DEPLOY_PACKAGE_NAME : "app-deploy-ver-$({ github.sha })"
 
 on:
   push:
@@ -17,6 +20,8 @@ jobs:
       run: |
         echo "Hello Message 1"
         echo "Hello Message 2"
+        echo "Application name: $({ env.APPLICATION_NAME})"
+
 
     - name: List current folder
       run: ls

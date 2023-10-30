@@ -20,7 +20,7 @@ jobs:
       run: |
         echo "Hello Message 1"
         echo "Hello Message 2"
-        echo "Application name: $({ env.APPLICATION_NAME})"
+        echo "Application name: $({env.APPLICATION_NAME})"
 
 
     - name: List current folder
@@ -39,6 +39,9 @@ jobs:
      
      - name: print Hello Message
        run: echo "Hello, world! from myDeploy job"
+
+     - name: printing Deployment Package
+       run: echo "Deploy Package Name is $({env.DEPLOY_PACKAGE_NAME})"
 
 
 

@@ -1,0 +1,39 @@
+name: DevOpsBasicsTest-SecondAction
+
+on:
+  push:
+    branches: [ "main" ]
+ 
+
+jobs:
+  myTest:
+    runs-on: windows-latest
+    steps:
+   
+    - name: print Hello Message
+      run: echo "Hello, world! from myTest job"
+    
+
+  myDeploy:
+     runs-on: windows-latest
+     steps:
+     - name: print Hello Message
+       run: echo "Hello, world! from myDeploy job"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       

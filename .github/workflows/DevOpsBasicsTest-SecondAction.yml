@@ -1,7 +1,7 @@
 name: DevOpsBasicsTest-SecondAction
 env:
   APPLICATION_NAME : "MyApp"
-  DEPLOY_PACKAGE_NAME : "app-deploy-ver-$({ github.sha })"
+  DEPLOY_PACKAGE_NAME : "app-deploy-ver-${{github.sha}}"
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
       run: |
         echo "Hello Message 1"
         echo "Hello Message 2"
-        echo "Application name: $({env.APPLICATION_NAME})"
+        echo "Application name: ${{env.APPLICATION_NAME}}"
 
 
     - name: List current folder
@@ -36,21 +36,21 @@ jobs:
     # needs: [myTest]
     
      env:
-       VAR1 : "This is Job Level Variable_1"
-       VAR2 : "This is Job Level Variable_2"
+        VAR1 : "This is Job Level Variable_1"
+        VAR2 : "This is Job Level Variable_2"
        
      steps:
 
      - name: print env Vars
        run: |
-         echo "Var1 = $({env.VAR1})"
-         echo "Var1 = $({env.VAR2})"
+         echo "Var1 = ${{env.VAR1})}"
+         echo "Var1 = ${{env.VAR2}}"
      
      - name: print Hello Message
        run: echo "Hello, world! from myDeploy job"
 
      - name: printing Deployment Package
-       run: echo "Deploy Package Name is $({env.DEPLOY_PACKAGE_NAME})"
+       run: echo "Deploy Package Name is ${{env.DEPLOY_PACKAGE_NAME}}"
 
      - name: Let`s test some Packages if they are here 1
        run: aws --version

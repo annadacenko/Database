@@ -44,7 +44,7 @@ jobs:
      - name: print env Vars
        run: |
          echo "Var1 = $({env.VAR1})"
-         echo "Var2 = $({env.VAR2})"
+         echo "Var1 = $({env.VAR2})"
      
      - name: print Hello Message
        run: echo "Hello, world! from myDeploy job"

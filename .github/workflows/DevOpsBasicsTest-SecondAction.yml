@@ -44,7 +44,10 @@ jobs:
      - name: print env Vars
        run: |
          echo "Var1 = ${{ env.VAR1 }}"
-         echo "Var1 = ${{ env.VAR2 }}"
+         echo "Var2 = ${{ env.VAR2 }}"
+         echo "Var3 = $LOCAL_STEP_VAR
+       env:
+        LOCAL_STEP_VAR: "This is Super local Env Var"
      
      - name: print Hello Message
        run: echo "Hello, world! from myDeploy job"

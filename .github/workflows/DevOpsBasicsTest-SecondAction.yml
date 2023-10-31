@@ -43,7 +43,7 @@ jobs:
 
      - name: print env Vars
        run: |
-         echo "Var1 = ${{env.VAR1})}"
+         echo "Var1 = ${{env.VAR1}}"
          echo "Var1 = ${{env.VAR2}}"
      
      - name: print Hello Message

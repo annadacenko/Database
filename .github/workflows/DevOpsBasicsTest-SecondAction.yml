@@ -36,15 +36,15 @@ jobs:
     # needs: [myTest]
     
      env:
-      VAR1 : "This is Job Level Variable_1"
-      VAR2 : "This is Job Level Variable_2"
+       VAR1 : "This is Job Level Variable_1"
+       VAR2 : "This is Job Level Variable_2"
        
      steps:
 
      - name: print env Vars
        run: |
-         echo "Var1 = $"({env.VAR1})"
-         echo "Var2 = $"({env.VAR2})"
+         echo "Var1 = $({env.VAR1})"
+         echo "Var2 = $({env.VAR2})"
      
      - name: print Hello Message
        run: echo "Hello, world! from myDeploy job"
